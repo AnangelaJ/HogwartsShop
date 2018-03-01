@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Shopeando</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <script src="/js/wrapperXml.js"></script>
+        <script src="/js/perfil.js"></script>
+    </head>
+    <body background= "/images/hogwarts.jpg">
+        <div class="cabecera">HogwartsShop</div>
+        <div class="admin">
+            <button type="button" class="btn" onclick="inicio()">Inicio</button>
+            <button type="button" class="btn" style="margin-top:0%; margin-left:-35%" onclick="add()">Agregar</button>
+            <button type="button" class="btn" style="margin-top:0%; margin-left:-85%" onclick="car()">Mi Carrito</button>
+            <button type='button' id="logout" class='btn' style="display:none; margin-top:0%; margin-left:-170%" onclick='logout()'>LogOut</button>
+        </div>
+        </div>
+        <form class="cuerpo" id="cuerpo">
+            <div class="catalogoP">
+                <table id="ctlg">
+                </table>
+            
+                <div class="cuadro" id="cuadro">
+                    <p>N° Identificacion</p> <input type="number" id="id" class="crud" disabled/>
+                    <p>NOMBRE: </p> <input type="text" id="nombre" class="crud"/>
+                    <p>DESCRIPCION: </p> <textarea type="text" id="descripcion" class="crud"></textarea>
+                    <p>PRECIO $: </p> <input type="number" id="precio" class="crud"/>
+                    <p>DISPONIBLES: </p> <input type="number" id="cantidad" class="crud"/>
+                    <div class="botones" id="botones">
+                        <li><a onclick = "send()"id="enviar">Enviar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="botones" id="botones">
+                <li><a onclick = "send()"id="enviar">Enviar</a></li>
+            </div>
+        </form>
+    </body>
+</html>

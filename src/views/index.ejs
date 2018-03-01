@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Shopeando</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <script src="/js/wrapperXml.js"></script>
+        <script src="/js/index.js"></script>
+    </head>
+    <body background= "/images/hogwarts.jpg">
+        <div class="cabecera">HogwartsShop</div>
+        <div class="admin" id="panel">
+            <input type="button" id="crud" value="Perfil" class="btn" onclick="perfil()">
+            <input type="button" id="LogReg" value="Ingresa" class="btn" style="margin-top:0%; margin-left:-35%" onclick="LogReg()">
+            <button type='button' id="home" class='btn' style="display:none; margin-top:0%; margin-left:-100%" onclick='iniciar()'>Inicio</button>
+            <button type='button' id="logout" class='btn' style="display:none; margin-top:0%; margin-left:-170%" onclick='logout()'>LogOut</button>
+        </div>
+        <div class="LogIn-Reg" id="LogReg">
+            <div class="cuadro" id="search" style="display: block; margin-left:-10%; margin-top:0%; width:25%; height:30%">
+                <input type="text" id="buscar" class="email" placeholder="Producto"/>
+                <input type="button" id="search" class="bIn" value="Buscar" style="width: 200%; margin-left:150%" onclick="buscar()"/>
+            </div>
+            <form class="LogIn" id="LogIn">
+                <input type="email" id="email" class="email" placeholder="Correo Electronico" required="true">
+                <input type="password" id="password" class="email" placeholder="Contraseña" required="true"/>
+                <input type="button" id="Ingresar" value="Ingresar" class="bIn" onclick="login()"/>
+            </form>
+            <form class="register" id="register">
+                <input type="text" id="name" class="email" placeholder="Nombre Completo" required="true"/>
+                <input type="email" id="emailr" class="email" placeholder="Correo Electronico" required="true"/>
+                <input type="password" id="passwordr" class="email" placeholder="Contraseña" required="true"/>
+                <input type="password" id="password2" class="email" placeholder="Repite Contraseña" required="true"/>
+                <input type="button" id="Registrar" value="Registrar" class="bIn" onclick="register()"/>
+            </form>
+            <div class="carrito" id="carrito">Productos agredados: 
+                <input type="button" id="Carrito" value="Mi carrito" class="car" onclick="carrito()"/>
+            </div>
+            <div class = "prod" id="prod"></div>
+        </div>
+        <div class="catalogo">
+            <table id="ctlg">
+            </table>
+            <input type="button" id="comprar" class="btn" value="Comprar" onclick="comprar()" style="width: 20%; height: 7%; margin-top: 5%; margin-left: 40%; display: none"/>
+            <input type="button" id="aceptar" class="btn" value="Aceptar" onclick="compra()" style="width: 20%; height: 7%; margin-top: 5%; margin-left: 40%; display: none"/>
+            <div class="cuadro" id="monto" style="display: none; margin-top: 0%; margin-left: 70%; font-family:'Times New Roman', Times, serif; color:red"> <strong>Total a Pagar:  </strong>  </div>
+        </div>
+    </body>
+</html>

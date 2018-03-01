@@ -1,0 +1,27 @@
+{
+  "name": "hogwartsshop",
+  "version": "1.0.0",
+  "description": "Carrito de Compras",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "nodemon index.js"
+  },
+  "author": "Anangela Jugo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "consolidate": "^0.15.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^7.3.2"
+  }
+}
